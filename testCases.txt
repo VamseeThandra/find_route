@@ -1,0 +1,94 @@
+input1.txt test cases:
+
+1) python find_route.py "input1.txt" "Luebeck" "Hamburg"
+
+Expected:
+distance: 63 km
+route:
+Luebeck to Hamburg, 63 km
+
+2) python find_route.py "input1.txt" "Bristol" "Frankfurt"
+
+Expected:
+distance: infinity
+route:
+none
+
+3) python find_route.py "input1.txt" "London" "London"
+
+Expected:
+distance: 0 km
+route:
+London to London, 0 km
+
+4) python find_route.py "input1.txt" "Berlin" "Frankfurt"
+
+Expected:
+distance: 664 km
+route:
+Berlin to Magdeburg, 166 km
+Magdeburg to Hannover, 148 km
+Hannover to Kassel, 165 km
+Kassel to Frankfurt, 185 km
+
+5) python find_route.py "input1.txt" "Munich" "Frankfurt"
+
+Expected:
+distance: 393 km
+route:
+Munich to Nuremberg, 171 km
+Nuremberg to Frankfurt, 222 km
+
+
+
+
+inputSam.txt test cases:
+
+1) python find_route.py "inputSam.txt" "city1" "city3"
+
+Expected:
+distance: 154 km
+route:
+city1 to city6, 6 km
+city6 to city8, 72 km
+city8 to city9, 16 km
+city9 to city5, 45 km
+city5 to city3, 15 km
+
+2) python find_route.py "inputSam.txt" "city1" "city4"
+
+Expected:
+distance: 130 km
+route:
+city1 to city6, 6 km
+city6 to city8, 72 km
+city8 to city9, 16 km
+city9 to city4, 36 km
+
+3) python find_route.py "inputSam.txt" "city2" "city5"
+
+Expected:
+distance: 66 km
+route:
+city2 to city3, 51 km
+city3 to city5, 15 km
+
+4) python find_route.py "inputSam.txt" "city2" "city9"
+
+Expected:
+distance: 111 km
+route:
+city2 to city3, 51 km
+city3 to city5, 15 km
+city5 to city9, 45 km
+
+5) python find_route.py "inputSam.txt" "city4" "city12"
+
+Expected:
+distance: 154 km
+route:
+city4 to city9, 36 km
+city9 to city8, 16 km
+city8 to city6, 72 km
+city6 to city1, 6 km
+city1 to city12, 24 km
